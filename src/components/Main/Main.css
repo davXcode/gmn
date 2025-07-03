@@ -72,3 +72,49 @@
 .main .card:hover {
   background-color: #dfe4ea;
 }
+
+.main-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  background-color: #f0f4f9;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.search-box img {
+  cursor: pointer;
+  width: 24px;
+}
+
+.search-box input {
+  background: transparent;
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 18px;
+}
+
+.search-box div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.main .bottom-info {
+  font-size: 13px;
+  margin: 15px auto;
+  text-align: center;
+  font-weight: 300;
+}
