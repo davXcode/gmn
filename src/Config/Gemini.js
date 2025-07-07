@@ -74,12 +74,8 @@ async function runChat(prompt) {
     // },
     responseMimeType: 'text/plain',
   };
-  const models = await ai.models.list();
-  console.log(models);
 
-  const model = 'gemini-1.5-flash'; // ganti sesuai model yang kamu akses
-  //   const model = 'models/gemini-pro'; // ganti sesuai model yang kamu akses
-  //   const model = 'gemini-2.5-pro'; // ganti sesuai model yang kamu akses
+  const model = 'gemini-1.5-flash';
 
   const contents = [
     {
@@ -105,6 +101,7 @@ async function runChat(prompt) {
       const text = chunk.text || '';
       fullText += text;
       console.log(text);
+      //   return text;
     }
     console.log('\n=== End of response ===');
     return fullText;
